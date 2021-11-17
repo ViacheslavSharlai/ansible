@@ -1,0 +1,14 @@
+---
+
+- name: Install environment for web
+  hosts: all
+  become: yes
+  roles:
+    - role: nginx
+    - role: php
+
+- name: Install environment for back
+  hosts: sql
+  become: yes
+  roles:
+    - role: phpmyadmin

@@ -1,0 +1,10 @@
+[web]
+web1  ansible_host=3.70.131.22
+web2  ansible_host=18.192.100.247
+
+[sql]
+sql1  ansible_host=3.69.165.14
+
+[all:children]
+web
+sql
